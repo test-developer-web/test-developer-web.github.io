@@ -1027,7 +1027,7 @@ section,
 # About Section
 --------------------------------------------------------------*/
 .about {
-  background: url("../img/about-bg.jpg") center center;
+  background: url("../img/crop-architect-opening-blueprint.jpg") center center;
   background-size: cover;
   position: relative;
   padding: 80px 0;
@@ -1176,8 +1176,10 @@ section,
 }
 
 .menu .menu-img {
-  width: 80px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
+  margin-right: 20px;
   float: left;
   border: 8px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
