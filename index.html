@@ -26,6 +26,35 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    .whatsapp-btn {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 100px;
+        right: 40px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .whatsapp-btn:hover {
+        background-color: #128C7E;
+    }
+
+    /* WhatsApp icon using Unicode */
+    .whatsapp-icon::before {
+        content: "\1F4AC";
+    }
+</style>
 </head>
 
 <body class="index-page">
@@ -55,6 +84,8 @@
     <div class="branding d-flex align-items-center">
       <div class="container position-relative d-flex align-items-center justify-content-between">
         <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+          <img src="assets/img/logo.JPG" class="menu-img" alt="Cloud Solutions">
+
           <h1 class="sitename">Vertex One Technologies</h1>
         </a>
 
@@ -63,36 +94,15 @@
           <ul>
             <li><a href="#hero" class="active">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#specials">Specials</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#events">Events</a></li>
-            <li><a href="#chefs">Chefs</a></li>
             <li><a href="#gallery">Gallery</a></li>
-            <li class="dropdown">
-              <a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Dropdown 1</a></li>
-                <li class="dropdown">
-                  <a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Dropdown 2</a></li>
-                <li><a href="#">Dropdown 3</a></li>
-                <li><a href="#">Dropdown 4</a></li>
-              </ul>
-            </li>
             <li><a href="#contact">Contact</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <a class="btn-book-a-table d-none d-xl-block" href="#book-a-table">Book a Table</a>
       </div>
     </div>
   </header>
@@ -108,7 +118,7 @@
             <h2 data-aos="fade-up" data-aos-delay="100">Vertex <span>One Technologies</span></h2>
             <p data-aos="fade-up" data-aos-delay="200">Empowering Your Future</p>
             <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-              <a href="#menu" class="cta-btn">About Us</a>
+              <a href="#Services" class="cta-btn">About Us</a>
               <a href="#contact" class="cta-btn">Contact Us</a>
             </div>
           </div>
@@ -191,7 +201,7 @@
     </section>
 
     <!-- Services / Solutions Section -->
-    <section id="services" class="menu section">
+    <section id="Services" class="menu section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Services & Solutions</h2>
         <p>Discover Our Cutting-Edge Offerings</p>
@@ -385,166 +395,226 @@
     </section>
 
     <!-- Events Section -->
-    <section id="events" class="events section">
-      <img class="slider-bg" src="assets/img/events-bg.jpg" alt="" data-aos="fade-in">
+<section id="events" class="events section">
+  <img class="slider-bg" src="assets/img/gallery/6.png" alt="Background technology graphic" data-aos="fade-in">
 
-      <div class="container">
-        <div class="swiper init-swiper" data-aos="fade-up" data-aos-delay="100">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="row gy-4 event-item">
-                <div class="col-lg-6">
-                  <img src="assets/img/cell-tower-5390644_1280.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>Birthday Parties</h3>
-                  <div class="price">
-                    <p><span>$189</span></p>
-                  </div>
-                  <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
-                  </p>
-                  <ul>
-                    <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                    <li><i class="bi bi-check2-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                    <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                  </ul>
-                  <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur
-                  </p>
-                </div>
-              </div>
+  <div class="container">
+    <div class="swiper init-swiper" data-aos="fade-up" data-aos-delay="100">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": {
+            "delay": 5000
+          },
+          "slidesPerView": "auto",
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          }
+        }
+      </script>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="row gy-4 event-item">
+            <div class="col-lg-6">
+              <img src="assets/img/cell-tower-5390644_1280.jpg" class="img-fluid" alt="Cell tower representing 5G infrastructure">
             </div>
-
-            <div class="swiper-slide">
-              <div class="row gy-4 event-item">
-                <div class="col-lg-6">
-                  <img src="assets/img/iot.jpeg" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>Private Parties</h3>
-                  <div class="price">
-                    <p><span>$290</span></p>
-                  </div>
-                  <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
-                  </p>
-                  <ul>
-                    <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                    <li><i class="bi bi-check2-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                    <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                  </ul>
-                  <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur
-                  </p>
-                </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 content">
+              <h3>5G Infrastructure Webinar</h3>
+              <div class="price">
               </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="row gy-4 event-item">
-                <div class="col-lg-6">
-                  <img src="assets/img/Cloud_Computing.webp" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>Custom Parties</h3>
-                  <div class="price">
-                    <p><span>$99</span></p>
-                  </div>
-                  <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
-                  </p>
-                  <ul>
-                    <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                    <li><i class="bi bi-check2-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                    <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                  </ul>
-                  <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur
-                  </p>
-                </div>
-              </div>
+              <p class="fst-italic">
+                Join our experts as they discuss the latest advancements in 5G technology and how they can transform your business operations.
+              </p>
+              <ul>
+                <li><i class="bi bi-check2-circle"></i> <span>In-depth industry insights and trends.</span></li>
+                <li><i class="bi bi-check2-circle"></i> <span>Interactive Q&amp;A session with telecom professionals.</span></li>
+                <li><i class="bi bi-check2-circle"></i> <span>Networking opportunities with industry peers.</span></li>
+              </ul>
+              <p>
+                Discover the potential of 5G networks and gain practical knowledge from seasoned experts. Stay ahead in the rapidly evolving telecom landscape.
+              </p>
             </div>
           </div>
-          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="row gy-4 event-item">
+            <div class="col-lg-6">
+              <img src="assets/img/iot.jpeg" class="img-fluid" alt="IoT devices network illustration">
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 content">
+              <h3>IoT Solutions Workshop</h3>
+              <div class="price">
+              </div>
+              <p class="fst-italic">
+                Hands-on workshop on designing and deploying effective IoT solutions for smart cities and industries.
+              </p>
+              <ul>
+                <li><i class="bi bi-check2-circle"></i> <span>Comprehensive IoT implementation strategies.</span></li>
+                <li><i class="bi bi-check2-circle"></i> <span>Case studies on successful IoT deployments.</span></li>
+                <li><i class="bi bi-check2-circle"></i> <span>Best practices for security and scalability.</span></li>
+              </ul>
+              <p>
+                Enhance your skills in IoT development and learn how to apply innovative technologies to create connected, efficient environments.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="row gy-4 event-item">
+            <div class="col-lg-6">
+              <img src="assets/img/cloudblue.png" class="img-fluid" alt="Cloud computing infrastructure graphic">
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 content">
+              <h3>Cloud Transformation Seminar</h3>
+              <div class="price">
+              </div>
+              <p class="fst-italic">
+                Learn about best practices and strategies for migrating to cloud infrastructures and optimizing cloud operations.
+              </p>
+              <ul>
+                <li><i class="bi bi-check2-circle"></i> <span>Expert-led sessions on cloud migration.</span></li>
+                <li><i class="bi bi-check2-circle"></i> <span>Insights into cost optimization and security.</span></li>
+                <li><i class="bi bi-check2-circle"></i> <span>Real-world case studies and lessons learned.</span></li>
+              </ul>
+              <p>
+                Join our seminar to understand how cloud transformation can drive efficiency, scalability, and innovation within your organization.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
 
-    <!-- Book A Table Section -->
-    <section id="book-a-table" class="book-a-table section">
+
+    
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Testimonials</h2>
+    <p>What Our Clients Are Saying</p>
+  </div>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="swiper init-swiper" data-speed="600" data-delay="5000" data-breakpoints="{ &quot;320&quot;: { &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 40 }, &quot;1200&quot;: { &quot;slidesPerView&quot;: 3, &quot;spaceBetween&quot;: 40 } }">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": {
+            "delay": 5000
+          },
+          "slidesPerView": "auto",
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          },
+          "breakpoints": {
+            "320": {
+              "slidesPerView": 1,
+              "spaceBetween": 40
+            },
+            "1200": {
+              "slidesPerView": 3,
+              "spaceBetween": 20
+            }
+          }
+        }
+      </script>
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>Vertex One Technologies transformed our network infrastructure with their expert 5G and fiber optic solutions. Their team's dedication and professionalism exceeded our expectations.</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+            <img src="assets/img/profile.png" class="testimonial-img" alt="Photo of John Doe">
+            <h3>John Doe</h3>
+            <h4>CTO, Global Telecom Inc.</h4>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>Thanks to Vertex One’s innovative AI-driven analytics platform, our data-driven decision-making process is now streamlined and more effective than ever.</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+            <img src="assets/img/profile.png" class="testimonial-img" alt="Photo of Sarah Lee">
+            <h3>Sarah Lee</h3>
+            <h4>CEO, DataInsights Corp.</h4>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>Working with Vertex One was seamless. Their expertise in cloud transformation helped us migrate efficiently, reducing costs and improving system reliability.</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+            <img src="assets/img/profile.png" class="testimonial-img" alt="Photo of Michael Zhang">
+            <h3>Michael Zhang</h3>
+            <h4>IT Director, FinTech Solutions</h4>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>The level of professionalism and technical expertise at Vertex One is unmatched. Their customized software solutions have significantly boosted our operational efficiency.</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+            <img src="assets/img/profile.png" class="testimonial-img" alt="Photo of Emma Rodriguez">
+            <h3>Emma Rodriguez</h3>
+            <h4>Operations Manager, SmartCity Projects</h4>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>Their consultancy on telecommunication infrastructure was a game-changer for our company, leading to a robust and future-proof network setup.</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+            <img src="assets/img/profile.png" class="testimonial-img" alt="Photo of David Kim">
+            <h3>David Kim</h3>
+            <h4>Founder, NextGen IoT</h4>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Certifications Section -->
+    <section id="gallery" class="gallery section">
       <div class="container section-title" data-aos="fade-up">
-        <h2>RESERVATION</h2>
-        <p>Book a Table</p>
+        <h2>Certifications</h2>
+        <p>Strong partnerships and recognized certifications</p>
       </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
-          <div class="row gy-4">
-            <div class="col-lg-4 col-md-6">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" required="">
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <input type="date" name="date" class="form-control" id="date" placeholder="Date" required="">
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <input type="time" class="form-control" name="time" id="time" placeholder="Time" required="">
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <input type="number" class="form-control" name="people" id="people" placeholder="# of people" required="">
-            </div>
-          </div>
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+        <div class="container">
+        <p>We collaborate with global industry leaders to bring the best solutions to our clients. Our strategic partnerships enable us to leverage advanced tools, frameworks, and expertise, ensuring that our services remain at the forefront of technological innovation.</p> 
 
-          <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
-          </div>
-
-          <div class="text-center mt-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
-            <button type="submit">Book a Table</button>
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <p>What they're saying about us</p>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="swiper init-swiper" data-speed="600" data-delay="5000" data-breakpoints="{ &quot;320&quot;: { &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 40 }, &quot;1200&quot;: { &quot;slidesPerView&quot;: 3, &quot;spaceBetween&quot;: 40 } }">
+        <div class="swiper init-swiper">
           <script type="application/json" class="swiper-config">
             {
               "loop": true,
@@ -560,165 +630,116 @@
               },
               "breakpoints": {
                 "320": {
-                  "slidesPerView": 1,
+                  "slidesPerView": 2,
                   "spaceBetween": 40
                 },
-                "1200": {
+                "480": {
                   "slidesPerView": 3,
-                  "spaceBetween": 20
+                  "spaceBetween": 60
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 120
                 }
               }
             }
           </script>
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/iso.jpeg" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/ccna.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/huawei.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/sap.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/awsarch.png" class="img-fluid" alt=""></div>
+           
+           </div>
         </div>
+
+      </div>
       </div>
     </section>
-
     <!-- Gallery Section -->
     <section id="gallery" class="gallery section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Gallery</h2>
-        <p>Some photos from Our Restaurant</p>
+        <p>Some photos from Our Projects</p>
       </div>
 
       <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
         <div class="row g-0">
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-1.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/1.png" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/1.png" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-2.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/2.png" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/2.png" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-3.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/3.png" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/3.png" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-4.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/4.png" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/4.png" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-5.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/5.png" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/5.png" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-6.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/6.png" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/6.png" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-7.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/8.png" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/8.png" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-8.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/7.png" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/7.png" alt="" class="img-fluid">
               </a>
             </div>
           </div>
         </div>
       </div>
     </section>
-
+ 
+    </section><!-- /Clients Section -->
     <!-- Chefs Section -->
-    <section id="chefs" class="chefs section">
+    <!-- <section id="chefs" class="chefs section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Team</h2>
         <p>Necessitatibus eius consequatur</p>
@@ -781,7 +802,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
@@ -950,6 +971,9 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <a href="https://wa.me/+393452466558" class="whatsapp-btn" target="_blank">
+    <i class="bi bi-whatsapp"></i>
+</a>
 </body>
 
 </html>
